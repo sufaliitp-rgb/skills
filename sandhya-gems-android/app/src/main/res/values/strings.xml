@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Sandhya Gems</string>
+
+    <string name="tab_home">Home</string>
+    <string name="tab_categories">Categories</string>
+    <string name="tab_cart">Cart</string>
+    <string name="tab_more">More</string>
+
+    <string name="search_hint">Search ruby, emerald, coral…</string>
+    <string name="hero_title">Natural gemstones, chosen with care</string>
+    <string name="hero_subtitle">Rubies, emeralds, sapphires, coral and more from Kolkata</string>
+    <string name="hero_cta">Shop all gemstones</string>
+    <string name="trust_certified">Certified stones</string>
+    <string name="trust_returns">30-day returns</string>
+    <string name="trust_shipping">Free shipping in India</string>
+
+    <string name="section_categories">Shop by category</string>
+    <string name="section_new">New arrivals</string>
+    <string name="section_best">Best sellers</string>
+    <string name="section_all">Our gemstones</string>
+    <string name="see_all">See all</string>
+    <string name="all_gemstones">All gemstones</string>
+
+    <string name="consult_title">Talk to our astrologer</string>
+    <string name="consult_text">Personal consultation online, %1$s</string>
+    <string name="rashi_title">Not sure which stone suits you?</string>
+    <string name="rashi_text">Get a free gemstone suggestion from your birth chart on RashiSutra.</string>
+    <string name="help_title">Need help choosing a stone?</string>
+    <string name="help_text">Talk to us before you buy. We are happy to guide you.</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="call_us">Call us</string>
+
+    <string name="sold_out">Sold out</string>
+    <string name="in_stock">In stock</string>
+    <string name="price_from">From %1$s</string>
+    <string name="percent_off">%1$d%% off</string>
+    <string name="items_count">%1$d items</string>
+    <string name="one_item">1 item</string>
+    <string name="sort">Sort</string>
+    <string name="sort_featured">Featured</string>
+    <string name="sort_price_low">Price: low to high</string>
+    <string name="sort_price_high">Price: high to low</string>
+    <string name="sort_newest">Newest first</string>
+
+    <string name="choose_option">Choose an option</string>
+    <string name="description">Description</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="go_to_cart">Go to cart</string>
+    <string name="buy_now">Buy now</string>
+    <string name="added_to_cart">Added to cart</string>
+    <string name="ask_about_stone">Ask us about this stone</string>
+    <string name="ask_about_stone_sub">Chat on WhatsApp before you buy</string>
+    <string name="whatsapp_product_message">Hello, I would like to know more about this: %1$s %2$s</string>
+    <string name="whatsapp_general_message">Hello, I need help choosing a gemstone.</string>
+    <string name="share_product">Share</string>
+    <string name="saved_to_wishlist">Saved to wishlist</string>
+    <string name="removed_from_wishlist">Removed from wishlist</string>
+
+    <string name="cart_title">Your cart</string>
+    <string name="cart_empty_title">Your cart is empty</string>
+    <string name="cart_empty_text">Stones you add will appear here.</string>
+    <string name="start_shopping">Start shopping</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="checkout_note">Shipping and taxes are calculated at checkout.</string>
+    <string name="checkout">Checkout securely</string>
+    <string name="remove_sold_out">Sold-out items will not be included in your order.</string>
+    <string name="remove">Remove</string>
+    <string name="decrease">Decrease quantity</string>
+    <string name="increase">Increase quantity</string>
+    <string name="max_quantity">You can add up to %1$d of one item.</string>
+    <string name="order_placed">Thank you! Your order has been placed.</string>
+
+    <string name="wishlist">Wishlist</string>
+    <string name="wishlist_empty_title">No saved stones yet</string>
+    <string name="wishlist_empty_text">Tap the heart on any stone to save it here.</string>
+    <string name="no_results_title">No stones found</string>
+    <string name="no_results_text">Try a different word, like \"ruby\" or \"coral\".</string>
+    <string name="empty_collection_title">Nothing here yet</string>
+    <string name="empty_collection_text">New stones are added often. Please check back soon.</string>
+    <string name="load_failed_title">Could not load</string>
+    <string name="try_again">Try again</string>
+    <string name="offline_notice">You are offline. Showing the last saved catalogue.</string>
+    <string name="product_missing_title">This stone is no longer listed</string>
+    <string name="product_missing_text">It may have been sold. Have a look at our other gemstones.</string>
+    <string name="browse_all">Browse all gemstones</string>
+
+    <string name="more_title">More</string>
+    <string name="more_shop">Your shopping</string>
+    <string name="more_account">My account and orders</string>
+    <string name="more_help">Help</string>
+    <string name="more_whatsapp">Chat on WhatsApp</string>
+    <string name="more_email">Email us</string>
+    <string name="more_contact">Contact page</string>
+    <string name="more_rashi">Find your gemstone (RashiSutra)</string>
+    <string name="more_store">Our shop in Kolkata</string>
+    <string name="store_address">Sandhya Gems Corner\nGround Floor, Shop No 2A, New Barrackpore Post Office Market, Station Road, Kolkata 700131\n(below New Barrackpore Post Office)</string>
+    <string name="store_hours">Mon, Wed, Fri, Sat, Sun: 10:00 am to 9:30 pm\nTue, Thu: 10:00 am to 3:30 pm</string>
+    <string name="get_directions">Get directions</string>
+    <string name="more_about_section">About</string>
+    <string name="more_about">About Sandhya Gems</string>
+    <string name="more_blog">Gemstone guides</string>
+    <string name="more_policies">Policies</string>
+    <string name="more_shipping">Shipping policy</string>
+    <string name="more_refund">Returns and refunds</string>
+    <string name="more_privacy">Privacy policy</string>
+    <string name="more_terms">Terms of service</string>
+    <string name="version">Version %1$s</string>
+
+    <string name="back">Back</string>
+    <string name="close">Close</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="no_app_found">No app found to open this.</string>
+    <string name="page_failed_text">This page could not be opened. Please check your connection.</string>
+    <string name="product_image">Product photo</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#141110</color>
+    <color name="surface">#1F1A18</color>
+    <color name="surface_alt">#2B2421</color>
+    <color name="primary">#6A46A8</color>
+    <color name="brand">#D9B25F</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="gold">#D9B25F</color>
+    <color name="text">#F2ECE6</color>
+    <color name="text_secondary">#B5AAA0</color>
+    <color name="divider">#3A322D</color>
+    <color name="success">#6FCF97</color>
+    <color name="danger">#F2867E</color>
+    <color name="ripple">#33FFFFFF</color>
+    <color name="scrim">#B3141110</color>
+</resources>
