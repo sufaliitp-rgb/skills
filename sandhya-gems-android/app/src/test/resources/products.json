@@ -104,14 +104,14 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/burma-ruby-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/ruby-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     },
     {
      "id": 1001,
      "position": 2,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/burma-ruby-2.jpg?v=170000001",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/ruby-2.jpg?v=170000001",
      "width": 1200,
      "height": 1200
     }
@@ -224,17 +224,17 @@
   },
   {
    "id": 4,
-   "title": "Yellow Sapphire (Pukhraj)",
+   "title": "Natural Citrine (Sunela) Gemstone",
    "handle": "ysapph",
-   "body_html": "<p><strong>Yellow Sapphire (Pukhraj)</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
+   "body_html": "<p><strong>Natural Citrine (Sunela) Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
    "published_at": "2026-08-02T10:00:00+05:30",
    "created_at": "2026-08-02T10:00:00+05:30",
    "updated_at": "2026-08-02T10:00:00+05:30",
    "vendor": "Sandhya Gems",
-   "product_type": "Yellow Sapphire",
+   "product_type": "Citrine",
    "tags": [
-    "sapphire",
-    "pukhraj",
+    "citrine",
+    "sunela",
     "jupiter"
    ],
    "variants": [
@@ -260,7 +260,7 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/yellow-sapphire-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/citrine-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     }
@@ -277,17 +277,18 @@
   },
   {
    "id": 5,
-   "title": "Certified White Coral Gemstone",
+   "title": "Natural White Zircon Gemstone",
    "handle": "copy-of-pearl-gemstone",
-   "body_html": "<p><strong>Certified White Coral Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
+   "body_html": "<p><strong>Natural White Zircon Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
    "published_at": "2026-07-15T10:00:00+05:30",
    "created_at": "2026-07-15T10:00:00+05:30",
    "updated_at": "2026-07-15T10:00:00+05:30",
    "vendor": "Sandhya Gems",
-   "product_type": "Coral",
+   "product_type": "Zircon",
    "tags": [
-    "coral",
-    "white coral"
+    "zircon",
+    "white zircon",
+    "venus"
    ],
    "variants": [
     {
@@ -312,7 +313,7 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/white-coral-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/white-zircon-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     }
@@ -365,14 +366,14 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/red-coral-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/coral-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     },
     {
      "id": 1001,
      "position": 2,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/red-coral-2.jpg?v=170000001",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/coral-2.jpg?v=170000001",
      "width": 1200,
      "height": 1200
     }
@@ -389,18 +390,18 @@
   },
   {
    "id": 7,
-   "title": "Certified Cat's Eye Gemstone",
+   "title": "Certified Gomed (Hessonite) Gemstone",
    "handle": "cats-eye-k-1",
-   "body_html": "<p><strong>Certified Cat's Eye Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
+   "body_html": "<p><strong>Certified Gomed (Hessonite) Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
    "published_at": "2026-06-01T10:00:00+05:30",
    "created_at": "2026-06-01T10:00:00+05:30",
    "updated_at": "2026-06-01T10:00:00+05:30",
    "vendor": "Sandhya Gems",
-   "product_type": "Cat's Eye",
+   "product_type": "Hessonite",
    "tags": [
-    "cats eye",
-    "lehsunia",
-    "ketu"
+    "gomed",
+    "hessonite",
+    "rahu"
    ],
    "variants": [
     {
@@ -425,7 +426,7 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/cats-eye-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/gomed-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     }
@@ -501,17 +502,18 @@
   },
   {
    "id": 9,
-   "title": "Certified Natural Citrine Bracelet for Abundance",
+   "title": "Natural Keshi Pearl (Moti)",
    "handle": "natural-citrine-bracelet",
-   "body_html": "<p><strong>Certified Natural Citrine Bracelet for Abundance</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
+   "body_html": "<p><strong>Natural Keshi Pearl (Moti)</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
    "published_at": "2026-05-05T10:00:00+05:30",
    "created_at": "2026-05-05T10:00:00+05:30",
    "updated_at": "2026-05-05T10:00:00+05:30",
    "vendor": "Sandhya Gems",
-   "product_type": "Bracelet",
+   "product_type": "Pearl",
    "tags": [
-    "bracelet",
-    "citrine"
+    "pearl",
+    "moti",
+    "moon"
    ],
    "variants": [
     {
@@ -536,7 +538,7 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/citrine-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/pearl-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     }
@@ -553,15 +555,15 @@
   },
   {
    "id": 10,
-   "title": "Blue Sapphire (Neelam)",
+   "title": "Natural Blue Zircon Gemstone",
    "handle": "blue-sapphire-neelam",
-   "body_html": "<p><strong>Blue Sapphire (Neelam)</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
+   "body_html": "<p><strong>Natural Blue Zircon Gemstone</strong> selected by hand for colour and clarity.</p><ul><li>Natural, untreated stone</li><li>Lab certificate included</li><li>Suitable for a ring or pendant</li></ul><p>Read our <a href=\"https://sandhyagems.in/pages/shipping-ex\">shipping policy</a>.</p>",
    "published_at": "2026-11-05T10:00:00+05:30",
    "created_at": "2026-11-05T10:00:00+05:30",
    "updated_at": "2026-11-05T10:00:00+05:30",
    "vendor": "Sandhya Gems",
-   "product_type": "Blue Sapphire",
-   "tags": "sapphire, neelam, saturn",
+   "product_type": "Zircon",
+   "tags": "zircon, blue zircon, venus",
    "variants": [
     {
      "id": 112,
@@ -585,14 +587,14 @@
     {
      "id": 1000,
      "position": 1,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/blue-sapphire-1.jpg?v=170000000",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/blue-zircon-1.jpg?v=170000000",
      "width": 1200,
      "height": 1200
     },
     {
      "id": 1001,
      "position": 2,
-     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/blue-sapphire-2.jpg?v=170000001",
+     "src": "https://cdn.shopify.com/s/files/1/0000/0001/files/blue-zircon-2.jpg?v=170000001",
      "width": 1200,
      "height": 1200
     }

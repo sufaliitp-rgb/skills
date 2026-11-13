@@ -3,13 +3,12 @@ package com.sandhyagems.app
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.BitmapFactory
 import android.graphics.Canvas
-import android.graphics.Color
-import android.graphics.Paint
-import android.graphics.RadialGradient
-import android.graphics.Shader
 import android.net.Uri
+import android.os.Handler
 import android.os.Looper
+import android.view.PixelCopy
 import android.view.View
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
@@ -93,36 +92,33 @@ class UiTest {
         idle()
         val decor = activity.window.decorView
         val bitmap = Bitmap.createBitmap(decor.width, decor.height, Bitmap.Config.ARGB_8888)
-        decor.draw(Canvas(bitmap))
+        // Render the way a phone does (rounded photos, shadows); fall back to plain drawing.
+        var result = -1
+        try {
+            PixelCopy.request(activity.window, bitmap, { result = it }, Handler(Looper.getMainLooper()))
+            idle()
+        } catch (e: Throwable) {
+            result = -1
+        }
+        if (result != PixelCopy.SUCCESS) decor.draw(Canvas(bitmap))
         val dir = File("build/screenshots").apply { mkdirs() }
         File(dir, "$name.png").outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
     }
 
-    /** A stand-in product photo: a soft glow in a colour picked from the file name. */
-    private fun gemPicture(url: String): Bitmap {
-        val colour = when {
-            "ruby" in url -> 0xFFB01E3C
-            "emerald" in url -> 0xFF1F8A5B
-            "yellow" in url || "citrine" in url -> 0xFFE0A91B
-            "blue" in url || "sapphire" in url -> 0xFF234FB5
-            "white" in url -> 0xFFE9E4DA
-            "coral" in url -> 0xFFE4572E
-            "opal" in url -> 0xFF8FD3D0
-            "cats" in url -> 0xFF9A8F3C
-            else -> 0xFF8E6BBF
-        }.toInt()
-        val size = 240
-        val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
-        val canvas = Canvas(bitmap)
-        canvas.drawColor(0xFFF4EFE7.toInt())
-        val paint = Paint(Paint.ANTI_ALIAS_FLAG)
-        paint.shader = RadialGradient(
-            size * 0.42f, size * 0.4f, size * 0.36f,
-            intArrayOf(Color.WHITE, colour, colour), floatArrayOf(0f, 0.55f, 1f), Shader.TileMode.CLAMP,
-        )
-        canvas.drawOval(size * 0.2f, size * 0.26f, size * 0.8f, size * 0.74f, paint)
-        return bitmap
+    /**
+     * Stands in for the network: answers each picture request with one of
+     * Sandhya Gems' own photographs, chosen by the stone named in the address.
+     */
+    private fun gemPicture(url: String): Bitmap? {
+        val name = listOf("blue-zircon" to "blue_zircon", "zircon" to "zircon", "ruby" to "ruby", "emerald" to "emerald",
+            "citrine" to "citrine", "coral" to "coral", "gomed" to "gomed", "opal" to "opal", "pearl" to "pearl")
+            .firstOrNull { it.first in url }?.second ?: return null
+        return photos.getOrPut(name) {
+            javaClass.classLoader!!.getResourceAsStream("photos/$name.jpg")!!.use(BitmapFactory::decodeStream)
+        }
     }
+
+    private val photos = HashMap<String, Bitmap>()
 
     // ------------------------------------------------------------ home and tabs
 
@@ -157,6 +153,15 @@ class UiTest {
         assertEquals("Personal consultation online, ₹499", text(main, R.id.home_consult_text))
         main.findViewById<View>(R.id.home_consult).performClick()
         assertEquals("astrology-consultation", nextStarted(main)!!.getStringExtra("handle"))
+    }
+
+    @Test
+    fun categoryWithoutAStorePictureGetsOurOwnPhoto() {
+        assertEquals(R.drawable.gem_opal, com.sandhyagems.app.ui.CategoryArt.forTitle("Opal"))
+        assertEquals(R.drawable.gem_ruby, com.sandhyagems.app.ui.CategoryArt.forTitle("Natural Ruby (Manik)"))
+        assertEquals(R.drawable.gem_blue_zircon, com.sandhyagems.app.ui.CategoryArt.forTitle("Blue Zircon"))
+        assertEquals(R.drawable.gem_zircon, com.sandhyagems.app.ui.CategoryArt.forTitle("White Zircon"))
+        assertNull(com.sandhyagems.app.ui.CategoryArt.forTitle("Best sellers"))
     }
 
     @Test
@@ -286,7 +291,7 @@ class UiTest {
         val list = search.findViewById<RecyclerView>(R.id.list)
         assertEquals(10, list.adapter!!.itemCount)
 
-        search.findViewById<TextView>(R.id.search_input).text = "coral"
+        search.findViewById<TextView>(R.id.search_input).text = "zircon"
         idle()
         assertEquals(2, list.adapter!!.itemCount)
         snap(search, "09-search")

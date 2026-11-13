@@ -6,7 +6,7 @@ own checkout.
 
 ![Screens](docs/screens.png)
 
-*Screens above use sample data, not the live catalogue.*
+*The photos above are Sandhya Gems' own; the product names and prices are sample data, not the live catalogue.*
 
 ## What it does
 
@@ -23,7 +23,7 @@ own checkout.
 
 ## Why it is light
 
-- The release APK is about **290 KB**.
+- The release APK is about **310 KB**.
 - No Firebase, no analytics SDK, no ad SDK. The only permission is Internet.
 - Product photos are requested at the size of the screen, not full size, and cached.
 - The catalogue is saved on the phone, so the app opens instantly on later launches.
@@ -57,6 +57,10 @@ store's normal checkout with the chosen items. The app never sees payment detail
    `app/src/main/res/values/colors.xml` (and `values-night` for dark mode).
 8. **App icon** is the diamond from the Sandhya Gems logo
    (`res/drawable-xxxhdpi/ic_launcher_foreground.png`).
+9. **Built-in gemstone photos** (`res/drawable-nodpi/gem_*.webp`) are the shop's own
+   pictures. They appear on the home banner and for any category that has no picture
+   set in Shopify (matched by name in `ui/CategoryArt.kt`). Product photos always come
+   live from the store.
 
 ## Build
 

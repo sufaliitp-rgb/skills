@@ -67,6 +67,8 @@ android {
     testOptions {
         unitTests {
             isIncludeAndroidResources = true
+            // Screen pictures are drawn with the real Android renderer.
+            all { it.systemProperty("robolectric.pixelCopyRenderMode", "hardware") }
         }
     }
 }

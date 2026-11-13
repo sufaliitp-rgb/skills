@@ -74,7 +74,7 @@ class DataTest {
     @Test
     fun tagsGivenAsCommaTextAreSplit() {
         val blue = sampleProducts().first { it.handle == "blue-sapphire-neelam" }
-        assertEquals(listOf("sapphire", "neelam", "saturn"), blue.tags)
+        assertEquals(listOf("zircon", "blue zircon", "venus"), blue.tags)
     }
 
     @Test
@@ -170,7 +170,8 @@ class DataTest {
             Catalog.search(all, "ruby").map { it.handle }.toSet(),
         )
         assertEquals(listOf("natural-emerald-panna"), Catalog.search(all, "PANNA").map { it.handle })
-        assertEquals(2, Catalog.search(all, "coral").size)
+        assertEquals(1, Catalog.search(all, "coral").size)
+        assertEquals(2, Catalog.search(all, "zircon").size)
         assertEquals(listOf("red-coral-moonga"), Catalog.search(all, "red coral").map { it.handle })
         assertEquals(listOf("ysapph"), Catalog.search(all, "jupiter").map { it.handle })
         assertTrue(Catalog.search(all, "diamond").isEmpty())

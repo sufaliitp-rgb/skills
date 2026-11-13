@@ -48,6 +48,14 @@ class HomeScreen(a: MainActivity) : Screen(a, R.layout.screen_home) {
         }
         view.findViewById<View>(R.id.home_call).setOnClickListener { Links.call(a) }
 
+        // Round off the three stone photos on the banner.
+        intArrayOf(R.id.hero_gem_1, R.id.hero_gem_2, R.id.hero_gem_3).forEach {
+            view.findViewById<ImageView>(it).apply {
+                clipToOutline = true
+                cropToPadding = true
+            }
+        }
+
         trust(R.id.trust_1, R.drawable.ic_verified, R.string.trust_certified)
         trust(R.id.trust_2, R.drawable.ic_returns, R.string.trust_returns)
         trust(R.id.trust_3, R.drawable.ic_shipping, R.string.trust_shipping)

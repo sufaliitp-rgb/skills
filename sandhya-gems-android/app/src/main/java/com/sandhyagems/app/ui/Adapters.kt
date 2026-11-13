@@ -110,14 +110,18 @@ class CategoryAdapter(
         val context = holder.itemView.context
         holder.title.text = collection.title
         ImageLoader.load(holder.image, collection.image, context.dp(72))
+        holder.image.clearColorFilter()
+        holder.image.scaleType = ImageView.ScaleType.CENTER_CROP
         if (collection.image == null) {
-            // No photo set in the store: show the gem mark instead of an empty circle.
-            holder.image.setImageResource(R.drawable.ic_gem)
-            holder.image.setColorFilter(context.getColor(R.color.gold))
-            holder.image.scaleType = ImageView.ScaleType.CENTER_INSIDE
-        } else {
-            holder.image.clearColorFilter()
-            holder.image.scaleType = ImageView.ScaleType.CENTER_CROP
+            // No picture set in the store: use our own photo of that stone, else the gem mark.
+            val photo = CategoryArt.forTitle(collection.title)
+            if (photo != null) {
+                holder.image.setImageResource(photo)
+            } else {
+                holder.image.setImageResource(R.drawable.ic_gem)
+                holder.image.setColorFilter(context.getColor(R.color.gold))
+                holder.image.scaleType = ImageView.ScaleType.CENTER_INSIDE
+            }
         }
         holder.count?.let { count ->
             count.show(collection.productsCount > 0)
