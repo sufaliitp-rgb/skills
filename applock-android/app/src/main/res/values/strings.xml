@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">App Lock</string>
+    <string name="tagline">Keep your private apps private</string>
+
+    <!-- Status -->
+    <string name="status_on">Protection is on</string>
+    <string name="status_off">Protection is off</string>
+    <string name="status_on_none">Choose the apps you want to lock below.</string>
+    <plurals name="status_on_count">
+        <item quantity="one">%d app is locked. It asks for your PIN or fingerprint when opened.</item>
+        <item quantity="other">%d apps are locked. They ask for your PIN or fingerprint when opened.</item>
+    </plurals>
+    <string name="status_off_text">To lock apps, App Lock needs to be switched on in Accessibility settings. It only checks which app is open. It never reads your screen.</string>
+    <string name="turn_on">Turn on</string>
+    <string name="setup_steps">1. Tap Turn on, find App Lock (it may be under \"Downloaded apps\" or \"Installed apps\") and switch it on.\n2. Switch greyed out or says \"Restricted setting\"? Open App info, tap ⋮ in the top corner, choose \"Allow restricted settings\", then try step 1 again.</string>
+    <string name="xiaomi_hint">On Xiaomi, Redmi and POCO phones, also open App info → Other permissions and allow \"Display pop-up windows while running in the background\".</string>
+    <string name="open_app_info">Open App info</string>
+
+    <!-- Options -->
+    <string name="section_options">OPTIONS</string>
+    <string name="opt_biometric">Fingerprint unlock</string>
+    <string name="opt_biometric_sub">Unlock with your fingerprint as well as your PIN</string>
+    <string name="opt_biometric_unavailable">Add a fingerprint in your phone\'s Settings first</string>
+    <string name="opt_relock">Lock again</string>
+    <string name="opt_change_pin">Change PIN</string>
+    <string name="opt_change_pin_sub">Pick a new 4 to 8 digit PIN</string>
+    <string-array name="relock_options">
+        <item>As soon as I leave the app</item>
+        <item>1 minute after I leave the app</item>
+        <item>5 minutes after I leave the app</item>
+        <item>Only when the screen turns off</item>
+    </string-array>
+
+    <!-- Apps -->
+    <string name="section_apps">APPS TO LOCK</string>
+    <plurals name="locked_count">
+        <item quantity="one">%d locked</item>
+        <item quantity="other">%d locked</item>
+    </plurals>
+    <string name="search_hint">Search apps</string>
+    <string name="loading_apps">Loading your apps…</string>
+    <string name="hint_suggested">Suggested</string>
+    <string name="hint_settings">Suggested: stops others from switching App Lock off</string>
+    <string name="lock_app_cd">Lock %1$s</string>
+
+    <!-- PIN screen -->
+    <string name="lock_title_app">%1$s is locked</string>
+    <string name="lock_subtitle_pin">Enter your PIN</string>
+    <string name="lock_subtitle_bio">Enter your PIN or use your fingerprint</string>
+    <string name="setup_title">Create a PIN</string>
+    <string name="setup_title_new">Create a new PIN</string>
+    <string name="setup_subtitle">Use 4 to 8 digits, then tap ✓</string>
+    <string name="setup_confirm_title">Confirm your PIN</string>
+    <string name="setup_confirm_subtitle">Enter the same PIN again</string>
+    <string name="setup_too_short">Use at least %1$d digits</string>
+    <string name="setup_mismatch">The PINs didn\'t match. Try again.</string>
+    <string name="pin_saved">PIN saved</string>
+    <string name="wrong_pin">Wrong PIN. Try again.</string>
+    <string name="too_many_attempts">Too many wrong tries. Wait %1$d s.</string>
+    <string name="use_fingerprint">Use fingerprint</string>
+    <string name="use_pin">Use PIN</string>
+    <string name="biometric_subtitle">Touch the fingerprint sensor</string>
+    <string name="delete">Delete</string>
+    <string name="ok">OK</string>
+
+    <string name="toast_lock_blocked">App Lock couldn\'t show its lock screen. Open App Lock and follow the setup steps.</string>
+    <string name="accessibility_description">App Lock uses this to notice when you open an app you chose to lock, so it can ask for your PIN or fingerprint. It only looks at which app is open. It never reads what\'s on your screen and never sends anything anywhere.</string>
+</resources>

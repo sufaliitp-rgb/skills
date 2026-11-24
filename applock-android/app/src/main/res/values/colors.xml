@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#F4F6FB</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="text_primary">#111827</color>
+    <color name="text_secondary">#6B7280</color>
+    <color name="accent">#4F46E5</color>
+    <color name="accent_soft">#EEF2FF</color>
+    <color name="divider">#E5E7EB</color>
+    <color name="ok_bg">#E8F6EE</color>
+    <color name="ok_fg">#15803D</color>
+    <color name="warn_bg">#FFF4E5</color>
+    <color name="warn_fg">#B45309</color>
+    <color name="chip_fg">#4338CA</color>
+
+    <!-- Lock screen: always dark -->
+    <color name="lock_bg_top">#312E81</color>
+    <color name="lock_bg_bottom">#0B1023</color>
+    <color name="lock_text">#FFFFFF</color>
+    <color name="lock_text_dim">#C7D2FE</color>
+    <color name="lock_error">#FCA5A5</color>
+    <color name="lock_key">#1AFFFFFF</color>
+    <color name="lock_key_pressed">#40FFFFFF</color>
+    <color name="lock_dot_empty">#99FFFFFF</color>
+</resources>
